@@ -1,6 +1,7 @@
 #!/bin/bash
 
-latest_file=$(ls -t | head -n 1)
+# latest_file_directory=$(ls -t | head -n 1)        # This will get latest file or directory
+latest_file=$(ls -pt | grep -v / | head -n 1)       # This will get latest file (not directory)
 
 echo "Latest created file is : $latest_file"
 
