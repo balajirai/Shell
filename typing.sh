@@ -7,4 +7,4 @@ for (( i=0; i<${#sentence}; i++ )); do
     sleep 0.05
 done
 
-echo ""
+echo
